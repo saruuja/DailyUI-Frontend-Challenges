@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>credit card checkout form or page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="container">
+        <img class="card" src="/Challenge 002/img/debit-card.png" alt="">
+          <div class="checkout-form">
+              <div class="peyment">
+                  <div class="title-text">
+                     <h1 class="title">Payments Details</h1>
+                     <p class="text">Complete your purchase by providing payment details</p>
+                  </div>
+                  <div class="icons">
+                    <i class="fa fa-credit-card-alt" style="font-size:26px"></i>
+                    <i class="fa fa-cc-visa" style="font-size:26px; color: darkgoldenrod;" ></i>
+                    <i class="fa fa-cc-mastercard" style="font-size:26px; color:gray;"></i>
+                    <i class="fa fa-cc-paypal" style="font-size:26px"></i>
+                  </div>
+                   <form action="" class="form">
+                    <p class="label" for="cardnumber">Card Holder</p>
+                    <input type="text" placeholder="card holder name" id="cardholder" name="cardholder" required>
+                    <p class="label" for="cardnumber">Card Number</p>
+                    <input type="number" placeholder="0000 0000 0000 0000" id="cardnumber" name="cardnumber" required>
+                    <div class="numbers">
+                        <div class="wrap-one">
+                            <p class="label"> Expiration Date</p>
+                            <input class="expirationdate" type="date" id="expirationdate" name="expirationdate" required>
+                        </div>
+                      <div class="wrap-two">
+                          <p class="label"> CVV</p>
+                          <input class="CVV" type="number" id="cvv" name="cvv" placeholder="***"  required>
+                      </div>
+                    </div>
+                   </form>
+                   <button type="submit" class="btn">Pay Now</button>
+                   <p style="text-align: center; font-size: 1rem;">⬅Previous steps</p>
+              </div>
+             
+               <div class="final">
+              
+                   <div class="items">
+                    <div class="qty-pric">
+                        <p class="name "> Quantity: 1</p>
+                        <p class="price ">$100.00</p>
+                    </div>
+                    
+                    <div class="shipin-price">
+                        <p class="name ">Shipping:
+                            <p class=" price margin-left"> $10</p>
+                    </div>
+                    <div class="total-price">
+                        <p class="total name"> Total:
+                            <p class="price">$110.00</p>
+                    </div>
+               </div>
+               </div>
+              
+          </div>
+    </div>
+</body>
+</html>
